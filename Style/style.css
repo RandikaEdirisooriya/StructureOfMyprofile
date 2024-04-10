@@ -73,9 +73,10 @@ header ul li a {
 }
 
 .ProfileImage {
-    position: relative;
-    top: -25%;
-    left: 60%;
+    position: absolute;
+    top: -40%;
+    left: 55%;
+    width: 600px;
 
 }
 .ProfileImage img{
@@ -85,20 +86,56 @@ header ul li a {
 .blue-text {
     color: rgba(1, 238, 255, 1); /* Change text color to blue */
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.links ul li a {
+.nav-links {
     position: relative;
-    top: 0;
-    display: flex; /* Align link and image horizontally */
-    align-items: center; /* Center items vertically */
-    text-decoration: none; /* Remove default underline */
-    color: #000; /* Set link color */
+    left: 10%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.links ul li a img {
-    margin-right: 5px; /* Add some space between image and text */
+.nav-links li {
+    margin: 0 10px;
 }
 
+.nav-links a {
+
+    display: block; /* To make the anchor element fill the list item */
+    padding-left: 40px;
+    padding-top: 30px;
+    text-decoration: none;
+    color: #000;
+
+}
+.nav-links a img{
+    box-shadow: 1px 1px 10px 1px aqua;
+
+}
+.dwnldBtn{
+    position: relative;
+    left: 20%;
+    background-color: aqua;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 1px 1px 10px 1px aqua;
+
+}
+.dwnldBtn:hover {
+    background-color: #00bbf8;
+}
 @media all and (max-width: 800px){
     .ProfileImage img{
         width: 600px;
