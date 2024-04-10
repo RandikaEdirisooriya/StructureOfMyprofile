@@ -1,0 +1,106 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(21, 25, 37, 1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 70px;
+    z-index: 100000;
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.Home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.text {
+    position: relative;
+    top: 25%;
+    left: 3%;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px; /* Added padding for space around the text */
+}
+
+.ProfileImage {
+    position: relative;
+    top: -25%;
+    left: 60%;
+
+}
+.ProfileImage img{
+    width: 600px;
+}
+
+.blue-text {
+    color: rgba(1, 238, 255, 1); /* Change text color to blue */
+}
+
+.links ul li a {
+    position: relative;
+    top: 0;
+    display: flex; /* Align link and image horizontally */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Set link color */
+}
+
+.links ul li a img {
+    margin-right: 5px; /* Add some space between image and text */
+}
+
+@media all and (max-width: 800px){
+    .ProfileImage img{
+        width: 600px;
+    }
+}
