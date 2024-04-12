@@ -8,6 +8,7 @@
     <meta name="author" content="Randika Bandara Edirisooriya">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='Style/style.css' rel='stylesheet'>
+    <link href='Style/normalize.css' rel='stylesheet'>
 
     <title>MyProfile</title>
 
@@ -67,49 +68,59 @@
 
 </section>
 <!--about me-->
-<section id="About">
+<section id="About" class="aboutme">
     <div>
-        <h1>About Me</h1>
+        <h1 class="aboutmeHead">About <span class="me">Me</span> </h1>
     </div>
     <div>
-        <img width="200" src="assets/portfoli.png" title="MyProfile" alt="MyProfile">
+        <img class="aboutmeImg"  src="assets/aboutme.png" title="MyProfile" alt="MyProfile">
     </div>
-    <p>
-        I'm Randika Bandara Edirisooriya, a full-stack developer passionate about creating <br>innovative software solutions. Proficient in languages like JavaScript, <br>Python, and Java, I excel in both front-end and back-end development.<br> Committed to delivering high-quality applications, I stay updated on the latest tech trends.<br> My dedication to excellence and attention to detail ensure the success of every project, from <br>intuitive user interfaces to optimized server-side performance.
+    <p class="about">
+        I'm Randika Bandara Edirisooriya, a full-stack developer passionate about creating
+        innovative software solutions. Proficient in languages like JavaScript,
+        Python, and Java, I excel in both front-end and back-end development.
+         Committed to delivering high-quality applications, I stay updated on the latest tech trends.
+         My dedication to excellence and attention to detail ensure the success of every project, fintuitive user interfaces to optimized server-side performance.
     </p>
-<button>See more</button>
+<button class="seemore">See more</button>
     <br>
 
-<hr>
+
 </section>
 <!--my Education-->
-<section id="Education">
-    <div>
-        <h1>My Education</h1>
-    </div>
-    <div>
+<section class="Education" id="Education">
+
+        <h1 class="EducationHead">My <span class="me">Education</span></h1>
+   <br>
+   <br>
+   <br>
+    <div class="Education-container">
+        <div class="Education-box">
         <img width="30" src="assets/icons8-school-24.png" title="School" alt="School">
         <p>
             I attended Mo/Medagama National School and successfully passed both my O/L <br>
             (Ordinary Level) and A/L (Advanced Level) examinations. These educational <br>
             milestones have laid a solid foundation for my academic journey, shaping my<br>
             knowledge and skills for future endeavors.
-        </p>
-        <button>Read more</button>
+        </p><br>
+        <button class="btn" >Read more</button>
     </div>
-    <div>
-        <img width="30" src="assets/icons8-degree-100.png" title="Higher Education" alt="Higher Education">
-        <p>
-            I pursued higher education in software engineering at IJSE (Institute of Java and<br>
-            Software Engineering). This experience equipped me with the necessary knowledge and <br>
-            skills to excel in the field of software development, further fueling my passion for <br>
-            creating innovative solutions.
-        </p>
-        <button>Read more</button>
-    </div>
-    <div>
+
+        <div class="Education-box">
+            <img width="30" src="assets/icons8-degree-100.png" title="Higher Education" alt="Higher Education">
+            <p>
+                I pursued higher education in software engineering at IJSE (Institute of Java and<br>
+                Software Engineering). This experience equipped me with the necessary knowledge and <br>
+                skills to excel in the field of software development, further fueling my passion for <br>
+                creating innovative solutions.
+            </p><br>
+            <button class="btn" >Read more</button>
+        </div>
+
+
+        <div class="Education-box">
         <img width="30" src="assets/icons8-code-100%20(1).png" title="Skills" alt="Skills">
-        <div>
+        <div class="skills-grid">
         <img width="30" src="assets/icons8-java-94.png" title="Java" alt="Java">
         <img width="30" src="assets/icons8-python-94.png" title="python" alt="python">
         <img width="30" src="assets/icons8-html-96.png" title="html" alt="html">
@@ -119,21 +130,24 @@
         <img width="30" src="assets/icons8-sql-60.png" title="sql" alt="sql">
         <img width="30" src="assets/hibernate-icon-1965x2048-qkmfg47d.png" title="hibernate" alt="hibernate">
         <img width="30" src="assets/icons8-figma-96.png" title="figma" alt="figma">
-        </div>
-        <button>Read more</button>
+        </div><br>
+        <button  class="btn">Read more</button>
     </div>
-<hr>
+    </div>
 
 </section>
 <!--my service-->
-<section id="Service">
-    <div>
-        <h1>My Service</h1>
-    </div>
+<section class="Service" id="Service">
+
+    <h1 class="EducationHead">My <span class="me">Service</span></h1>
+
+    <div class="Service-Container">
+
+
     <div>
         <img width="30" src="assets/icons8-pen-100.png" title="designer" alt="designer">
 
-<div>
+
     <h2>UI-UX Design</h2>
     <p>
         I'm a UI/UX designer, merging creativity with functionality to build user-friendly experiences.<br>
@@ -141,7 +155,7 @@
         Passionate about simplifying complex ideas, I aim to make every interaction a seamless and delightful<br>
         experience.
     </p>
-</div>
+
         <button>Read more</button>
     </div>
 
@@ -149,7 +163,7 @@
       <div>
         <img width="30" src="assets/icons8-code-100.png" title="Web Development" alt="Web Development">
 
-<div>
+
     <h2>Web Development</h2>
     <p>
         I'm a web developer, turning concepts into reality through coding and dynamic online experiences. Proficient <br>
@@ -157,14 +171,14 @@
         delivering engaging and efficient web solutions, staying updated on the latest technologies to build innovative applications.
 
     </p>
-</div>
+
         <button>Read more</button>
     </div>
 
       <div>
         <img width="30" src="assets/icons8-tv-50.png" title="Digital Marketing" alt="Digital Marketing">
 
-<div>
+
     <h2>Digital Marketing</h2>
     <p>
         I'm a web developer, turning concepts into reality through coding and dynamic online experiences. Proficient in HTML,<br>
@@ -173,10 +187,11 @@
 
 
     </p>
-</div>
+
         <button>Read more</button>
     </div>
-<hr>
+    </div>
+
 
 </section>
 <section id="Assignment">
