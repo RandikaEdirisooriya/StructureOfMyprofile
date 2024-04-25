@@ -365,6 +365,7 @@ display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 #Projects{
     width: 100%;
@@ -585,7 +586,39 @@ textarea {
         align-items: center;
         text-align: center;
     }
+    /*services*/
+    .Service-Container{
+        position: relative;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Service-Box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
 
+    .Project-box img{
+        width: 100px;
+        height: 60px;
+    }
 
 
 }
@@ -690,8 +723,66 @@ textarea {
         align-items: center;
         text-align: center;
     }
+/*service*/
+    .Service-Container{
+        position: relative;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Service-Box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 2rem 1rem 3rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .Project-Container{
+        position: relative;
+        top: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
-
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Project-box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+    }
+    .Project-box img{
+        width: 100px;
+        height: 100px;
+    }
 
 }
 @media all and (max-width: 1020px) {
@@ -789,6 +880,65 @@ textarea {
         font-size: 10px;
 
     }
+    /*service*/
+    .Service-Container{
+        position: relative;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Service-Box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 2rem 0rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .Project-Container{
+        position: relative;
+        top: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Project-box{
+        width: 30%;
+        height: 30%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 2rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Project-box img{
+        width: 100px;
+        height: 100px;
+    }
 
 }
 @media all and (max-width: 965px) {
@@ -873,6 +1023,66 @@ textarea {
     }
     .skills-grid img{
         width: 24px;
+    }
+    /*service*/
+    .Service-Container{
+        position: relative;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Service-Box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 2rem 0rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .Project-Container{
+        position: relative;
+        top: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Project-box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 1rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    .Project-box img{
+        width: 100px;
+        height: 60px;
     }
 }
 
@@ -978,7 +1188,66 @@ textarea {
     .skills-grid img{
         width: 20px;
     }
+    /*service*/
+    .Service-Container{
+        position: relative;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Service-Box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 1rem 0rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .Project-Container{
+        position: relative;
+        top: 17%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
+        gap: 2rem;
+        padding: 0 20px;
+    }
+    .Project-box{
+        width: 30%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 0rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    .Project-box img{
+        width: 100px;
+        height: 60px;
+    }
 }
 
 
@@ -1092,8 +1361,80 @@ textarea {
         align-items: center;
         font-size: 10px;
     }
+    /*service*/
+    .Service {
 
+        overflow-y: unset;
+    }
+    .Service-Container{
+        position: relative;
+        top: 6%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Service-Box{
+        width: 60%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 1rem 0rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .Assignment{
+        overflow-y: unset;
+    }
+.Assignment-Container{
+    position: relative;
+    top: 6%;
+    display: flex;
+    flex-direction: column;
 
+}
+.Assignment-Box{
+    width: 40%;
+}
+#Projects{
+    overflow-y: unset;
+}
+    .Project-Container{
+        position: relative;
+        top: 6%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Project-box{
+        width: 50%;
+        height: 30%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 3rem 0rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    .Project-box img{
+        width: 100px;
+        height: 60px;
+    }
+    .social-icons{
+        left: 10%;
+    }
 }
 
 @media all and (max-width: 590px){
@@ -1222,7 +1563,34 @@ textarea {
         align-items: center;
         font-size: 10px;
     }
+    /*service*/
+    .Service {
 
+        overflow-y: unset;
+    }
+    .Service-Container{
+        position: relative;
+        top: 6%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Service-Box{
+        width: 60%;
+        height: 40%;
+        flex: 1 1 1rem;
+        background-color: rgba(50, 56, 70, 1);
+        padding: 1rem 0rem 2rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        border: 2rem solid #323846;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
 
 
 }
@@ -1361,7 +1729,9 @@ textarea {
         font-size: 10px;
     }
 
-
+    .social-icons{
+        left: -10%;
+    }
 }
 /*
 !*media queries*!
