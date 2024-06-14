@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+
+    <link rel="stylesheet" href="/style/normalize.css">
+
+    <style>
+
+        section{
+            border :2px solid red ;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        div{
+            width:50%;
+            height: 50%;
+        }
+
+        #div1{
+            border: 2px solid red;
+            background-color: red;
+            position: absolute;
+        }
+        #div2{
+            border: 2px solid red;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+        }
+        #div3{
+            border: 2px solid red;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #div4{
+            border: 2px solid red;
+            background-color: pink;
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+        }
+        #div5{
+            width: 15%;
+            height: 25%;
+            border: 2px solid red;
+            background-color: white;
+            position: absolute;
+
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+        #round1{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-bottom-right-radius: 360px;
+            background-color: white;
+            position: absolute;
+        }
+        #round2{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-top-left-radius: 360px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #round3{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-bottom-left-radius: 360px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #round4{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-top-right-radius: 360px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #round5{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-top-right-radius: 360px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            bottom:0;
+            margin: auto;
+        }
+
+        #round6{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-top-left-radius: 360px;
+            background-color: white;
+            position: absolute;
+            right: 50%;
+            bottom:0;
+            margin: auto;
+        }
+
+        #round7{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-bottom-left-radius: 360px;
+            background-color: white;
+            position: absolute;
+            left: 42%;
+            top:0;
+            margin: auto;
+        }
+
+        #round8{
+            width: 8%;
+            height: 15%;
+            border: 1px solid white;
+            border-bottom-right-radius: 360px;
+            background-color: white;
+            position: absolute;
+            right: 42%;
+            top:0;
+            margin: auto;
+        }
+
+        #centerRound{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid white;
+            border-radius: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #leftRound{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid white;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #leftBottomRound{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid white;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #rightTopRound{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid white;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #rightBottomRound{
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid white;
+            border-radius: 100px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #LeftTopdivRound{
+            border: 2px solid white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #LeftBottomdivRound{
+            border: 2px solid white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #rightTopdivRound{
+            border: 2px solid white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        #rightBottomdivRound{
+            border: 2px solid white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+        }
+
+        Body{
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+    <div id="div1">
+        <div id="leftRound">
+            <div id="LeftTopdivRound"></div>
+        </div>
+    </div>
+    <div id="div2">
+        <div id="leftBottomRound">
+            <div id="LeftBottomdivRound"></div>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="rightTopRound">
+            <div id="rightTopdivRound"></div>
+        </div>
+    </div>
+    <div id="div4">
+        <div id="rightBottomRound">
+            <div id="rightBottomdivRound"></div>
+        </div>
+    </div>
+    <div id="div5"></div>
+    <div id="round1"></div>
+    <div id="round2"></div>
+    <div id="round3"></div>
+    <div id="round4"></div>
+    <div id="round5"></div>
+    <div id="round6"></div>
+    <div id="round7"></div>
+    <div id="round8"></div>
+    <div id="centerRound"></div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-3</title>
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <style>
+        section {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        div {
+            width: 200px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        #circle1 {
+            background-color: purple;
+        }
+        #circle2 {
+            background-color: deepskyblue;
+        }
+        #circle3 {
+            background-color: coral;
+        }
+        h3 {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+        }
+
+        #ring1 {
+            width: 220px;
+            max-width: 90vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border: grey 10px solid;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 1;
+        }
+        #ring2 {
+            width: 200px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border: red 10px solid;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="ring1"></div>
+<div id="ring2"></div>
+<section>
+    <div id="circle1">
+        <h3>Hello</h3>
+    </div>
+</section>
+<section>
+    <div id="circle2">
+        <h3>Welcome To</h3>
+    </div>
+</section>
+<section>
+    <div id="circle3">
+        <h3>Institute<br>of<br>Software<br>Engineering</h3>
+    </div>
+</section>
+</body>
+</html>
