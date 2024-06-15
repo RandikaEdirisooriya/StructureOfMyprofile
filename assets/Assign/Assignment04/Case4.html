@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 4</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+
+        div{
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            animation-name: animi;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animi {
+            /*0%{
+
+            }
+            25%{
+                width: 40px;
+                height: 40px;
+            }
+            50%{
+                width: 80px;
+                height: 80px;
+            }
+            75%{
+               width: 160px;
+                height: 160px;
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+            }*/
+            from{
+                width: 20px;
+                height: 20px;
+            }
+            to{
+                width: 500px;
+                height: 500px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
