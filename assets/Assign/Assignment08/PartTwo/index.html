@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment08</title>
+
+    <style>
+        h1{
+            color: #ffffff;
+            font-size: 50px;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        body{
+            background: rgb(44, 67, 70);
+        }
+        section{
+            position: relative;
+            display: flex;
+            margin: auto;
+            width: 30%;
+            justify-content: center;
+        }
+        #div6{
+            position: absolute;
+            left: 65%;
+        }
+        #div1{
+            position: relative;
+            left: 27%;
+        }
+        .div{
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript Queue</h1>
+<br><br><br><br><br>
+<div class="div" id="div1"></div>
+<hr>
+<section>
+    <div class="div" id="div2"></div>
+    <div class="div" id="div3"></div>
+    <div class="div" id="div4"></div>
+    <div class="div" id="div5"></div>
+</section>
+<hr>
+<div class="div" id="div6"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var array=["pink","Blue","Red","Green","Yellow","Purple"];
+    function Colours(){
+        let lastArray=array.pop();
+        array.unshift(lastArray);
+        $(".div").eq(0).css('background-color', array[0]);
+        $(".div").eq(1).css('background-color', array[1]);
+        $(".div").eq(2).css('background-color', array[2]);
+        $(".div").eq(3).css('background-color', array[3]);
+        $(".div").eq(4).css('background-color', array[4]);
+        $(".div").eq(5).css('background-color', array[5]);
+    }
+    setInterval(Colours, 1000);
+</script>
+</body>
+</html>

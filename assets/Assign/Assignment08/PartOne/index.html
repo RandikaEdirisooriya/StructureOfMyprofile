@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment08</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity</title>
+</head>
+<style>
+   #head{
+        color: #e16f6f;
+       font-size: 50px;
+       margin: auto;
+       width: 50%;
+       text-align: center;
+
+    }
+    section{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+     /*   border: 6px solid red;*/
+        margin: 10px;
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 30px;
+        margin: auto;
+    }
+
+</style>
+<body>
+<h1 id="head">Js Que</h1>
+<section id="Boxes">
+    <div>
+        <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_A">A</h1>
+    </div>
+    <div>
+          <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_B">B</h1>
+    </div>
+    <div>
+          <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_C">C</h1>
+    </div>
+    <div>
+          <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_D">D</h1>
+    </div>
+    <div>
+          <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_E">E</h1>
+    </div>
+    <div>
+          <img src="Assets/img.gif" width="100px" height="50px">
+        <h1 id="h1_F">F</h1>
+    </div>
+    <hr>
+</section>
+<hr>
+
+<script src="../../JsDay05/lib/jquery-3.7.1.min.js"></script> <!-- Corrected jQuery link -->
+
+<script>
+    var array=["A","B","C","D","E","F"];
+
+
+    function Letters(){
+        let lastArray=array.pop();
+        array.unshift(lastArray);
+        $('#h1_A').text(array[0]);
+        $('#h1_B').text(array[1]);
+        $('#h1_C').text(array[2]);
+        $('#h1_D').text(array[3]);
+        $('#h1_E').text(array[4]);
+        $('#h1_F').text(array[5]);
+    }
+    setInterval(Letters, 800);
+
+
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

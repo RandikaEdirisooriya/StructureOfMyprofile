@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .calculator {
+        border-radius: 10px;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        margin-block-start: 10em;
+        max-inline-size: 22rem;
+        overflow: hidden;
+        box-shadow: 1px 1px 20px 1px cyan;
+    }
+    .calculator__output {
+        background: hsl(202, 11%, 43%);
+        color: hsl(255, 100%, 100%);
+        font-size: 4rem;
+        padding-block-start: 0.5rem;
+        padding-block-end: 0.5rem;
+        padding-inline-end: 0.75rem;
+        text-align: end;
+    }
+    .calculator__keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1px;
+        background: hsl(207, 19%, 61%);
+    }
+    .calculator__key {
+        background: hsl(210, 25%, 95%);
+        border: none;
+        padding-block-start: 1rem;
+        padding-block-end: 1rem;
+        padding-inline-end: 1.25rem;
+        padding-inline-start: 1.25rem;
+        font-size: 2.0rem;
+    }
+    .calculator__key:active,
+    .calculator__key:focus {
+        box-shadow: 0 0 8px 0 rgb(1, 59, 63) inset;
+        outline: none;
+    }
+    .calculator__key--operator {
+        background: hsl(208, 25%, 86%);
+    }
+    .calculator__key--operator:active {
+        background: hsl(175, 59%, 74%);
+    }
+    .calculator__key--enter {
+        grid-column: 4 / 5;
+        grid-row: 2 / span 4;
+        background: hsl(225, 80%, 55%);
+    }
+</style>
+<body>
+<div class="calculator">
+    <div class="calculator__output">0</div>
+    <div class="calculator__keys">
+        <button class="calculator__key calculator__key--operator">+</button>
+        <button class="calculator__key calculator__key--operator">-</button>
+        <button class="calculator__key calculator__key--operator">&times;</button>
+        <button class="calculator__key calculator__key--operator">÷</button>
+        <button class="calculator__key">7</button>
+        <button class="calculator__key">8</button>
+        <button class="calculator__key">9</button>
+        <button class="calculator__key">4</button>
+        <button class="calculator__key">5</button>
+        <button class="calculator__key">6</button>
+        <button class="calculator__key">1</button>
+        <button class="calculator__key">2</button>
+        <button class="calculator__key">3</button>
+        <button class="calculator__key">0</button>
+        <button class="calculator__key">.</button>
+        <button class="calculator__key">AC</button>
+        <button class="calculator__key calculator__key--enter">=</button>
+    </div>
+</div>
+<script src="../cal/lib/jquery-3.7.1.min.js"></script >
+
+<script>
+    const calculator = {
+        currentOperand: '',
+        previousOperand: '',
+        operator: '',
+        result: '',
+
+        updateDisplay() {
+            document.querySelector('.calculator__output').textContent = this.currentOperand;
+        },
+
+        clear() {
+            this.currentOperand = '';
+            this.previousOperand = '';
+            this.operator = '';
+            this.result = '';
+            this.updateDisplay();
+        },
+
+        compute() {
+            const prev = parseFloat(this.previousOperand);
+            const current = parseFloat(this.currentOperand);
+            switch (this.operator) {
+                case '+':
+                    this.result = prev + current;
+                    break;
+                case '-':
+                    this.result = prev - current;
+                    break;
+                case '×':
+                    this.result = prev * current;
+                    break;
+                case '÷':
+                    this.result = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            this.currentOperand = this.result.toString();
+            this.previousOperand = '';
+            this.operator = '';
+            this.updateDisplay();
+        },
+
+        handleKeyClick(event) {
+            const clickedButtonValue = event.target.textContent;
+
+            if(clickedButtonValue === 'AC') {
+                this.clear();
+                return;
+            }
+
+            if (clickedButtonValue === '=') {
+                this.compute();
+                return;
+            }
+
+            if (!isNaN(clickedButtonValue)) {
+                this.currentOperand += clickedButtonValue;
+                this.updateDisplay();
+                return;
+            }
+
+            if (['+', '-', '×', '÷'].includes(clickedButtonValue)) {
+                this.operator = clickedButtonValue;
+                this.previousOperand = this.currentOperand;
+                this.currentOperand = '';
+                return;
+            }
+
+            if (clickedButtonValue === '.') {
+                if (this.currentOperand.includes('.')) return;
+                this.currentOperand += '.';
+                this.updateDisplay();
+                return;
+            }
+        }
+    };
+
+    document.querySelectorAll('.calculator__key').forEach(button => {
+        button.addEventListener('click', () => {
+            calculator.handleKeyClick(event);
+        });
+    });
+
+</script>
+</body>
+</html>
